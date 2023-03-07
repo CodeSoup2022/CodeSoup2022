@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<!--
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.sound.min.js"></script>
+		-->
+    <!--<script type="importmap">
+      {
+        "imports": {
+          "widgetFactory": "_javascript/widgetFactory.js"
+        }
+      }
+    </script>-->
+    <!--
+          "palettizeGraphicsApp": "_javascript/palettizeGraphicsApp.js" -->
+    <script type="module" src="_javascript/widgetFactor.js"></script>
+    <script type="module" src="_javascript/palettizeGraphicsApp.js"></script>
+    <link rel="stylesheet" type="text/css" href="_css/style.theme.css">
+    <link rel="stylesheet" type="text/css" href="_css/style.main.css">
+    <link id="widget-styles" rel="stylesheet" type="text/css" href="_css/style.merge-widget-css-container.css">
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div id="padded-scroll-container">
+      <form id="file-drop-zone">
+        <main id="main"></main>
+        <div id="widgets">
+          <template data-widget-name="load-file"></template>
+          <template data-widget-name="tab-group">
+            <template data-widget-name="tab">
+              <template data-widget-name="image-editor"></template>
+            </template>
+            <template data-widget-name="tab">
+              <template data-widget-name="video-player-editor"></template>
+            </template>
+            <template data-widget-name="tab">
+              <template data-widget-name="unicode-icon-editor"></template>
+            </template>
+          </template>
+          <script src="sketch.js"></script>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

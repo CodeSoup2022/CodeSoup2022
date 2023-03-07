@@ -1,0 +1,20 @@
+html, body {
+    
+    margin: 0;
+    padding: 0;
+    
+    background: #111;
+    color: #777;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+canvas {
+    display: block;
+    
+    /* https://css-tricks.com/background-patterns-simplified-by-conic-gradients/#checkerboard */
+    background: repeating-conic-gradient(#555 0% 25%, #333 0% 50%) 50% / 16px 16px;
+}

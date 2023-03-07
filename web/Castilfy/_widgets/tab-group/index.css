@@ -1,0 +1,53 @@
+/* https://css-tricks.com/examples/CSSTabs/#tab16 */
+.tab-group {
+    min-height: 250px;
+    position: relative;
+    width: 100%;
+}
+
+.tab-group > .tab {
+    display: inline;
+}
+
+.tab-group > .tab > a {
+    margin-left: -1px;
+    position: relative;
+    left: 1px;
+    text-decoration: none;
+    color: black;
+    background: white;
+    display: block;
+    float: left;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-bottom: 1px solid white;
+}
+
+.tab-group > .tab:not(:target) > a {
+    border-bottom: 0;
+    background: linear-gradient(top, white, #eee);
+}	
+
+.tab-group > .tab:target > a {
+    background: white;
+}	
+
+.tab-group > .tab > .content {
+    background: white;
+    z-index: -2;
+    left: 0;
+    top: 30px;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.tab-group > .tab:not(:target) > .content {
+    position: absolute
+}
+
+.tab-group > .tab:target > .content {
+    position: absolute;
+    z-index: -1;
+}
